@@ -6,3 +6,5 @@ PostgresSQL Refistration+tkinter
 ?> В папке console, main.py- главный код, есть только запись кода в SQL
 
 
+#РЕГИСТРАЦИЯSQL #REGISTRATIONSQL
+#POSTGRESQL #REGISTRATIONSQL
