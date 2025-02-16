@@ -1,0 +1,10 @@
+import psycopg2
+connect = psycopg2.connect(host='localhost', user='postgres', password='123456', dbname='postgres', port="5432")
+cursor = connect.cursor()
+name = input('Введи свое имя: ')
+password = input('И теперь свой пароль: ')
+cursor.execute("""INSERT INTO users(id, name, password)
+                  VALUES(3, %s, %s)""", (name, password))
+connect.commit()
+cursor.close()
+connect.close()
